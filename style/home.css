@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: rgb(76, 175, 80);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 9999;
+}
+
+.navbar .bagian1 {
+  align-items: center;
+}
+
+.humberger-menu:hover {
+  cursor: pointer;
+}
+
+.container {
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  left: -100%;
+  transition: 0.4s ease;
+}
+
+.container.active {
+  left: -2%;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  padding: 20px;
+  left: 0;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+  width: 100%;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar nav ul li:hover {
+  background-color: black;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url("Hidroponik1.jpg");
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  font-family: "Playwrite DE Grund", cursive;
+}
+
+.hero .content {
+  text-align: center;
+  font-weight: 400;
+}
